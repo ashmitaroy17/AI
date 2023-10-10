@@ -1,0 +1,217 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(#cbd5c0, #e2e2e2, #c4d5c4);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #000; /* Change this line to black for dark mode */
+  }
+}
+
+/* Add this rule to set font color to black in light mode */
+@media (prefers-color-scheme: light) {
+  body {
+    color: #000;
+  }
+}
+
+a {
+  font-weight: 500;
+  color: #131dde00;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #0a0b15;
+}
+
+body {
+  margin: 0;
+  /* display: flex;
+  place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: left;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+/* Define the CSS class for the oval button */
+.ellipsoid_btn {
+  background-color: black; /* Set the background color to black */
+  color: white; /* Set the text color to white */
+  border: none; /* Remove the button border, if any */
+  padding: 8px 16px; /* Adjust padding as needed */
+  font-size: 14px; /* Adjust font size as needed */
+  width: 80px; /* Set the width of the button */
+  height: 40px; /* Set the height of the button */
+  border-radius: 50% / 30%; /* Create an ellipsoid shape */
+  cursor: pointer;
+}
+
+/* Add hover effect if desired */
+.ellipsoid_btn:hover {
+  background-color: #333; /* Change the background color on hover */
+}
+.orange_gradient {
+  background: linear-gradient(45deg, #FFA500, #FF4500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+}
+/* Center the "desc" element horizontally */
+.desc {
+  text-align: center; /* Center text horizontally */
+  font-weight: normal;
+}
+
+/* Add margin-top to push it down below the headline */
+.head_text + .desc {
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Center the search bar horizontally and vertically within its parent flex container */
+.flex.flex-col.w-full.gap-2 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+   position: relative; /* Add position relative */
+  top: 70%; /* Vertically center at 50% of viewport height */
+  transform: translateY(-50%);
+  margin-top: 30px;
+}
+
+/* Styles for the input element */
+.url_input.peer {
+  width: 1000%;
+  max-width: 800px;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 2px solid #e5e7ec;
+  border-radius: 24px;
+  background-color: #f2f2f2;
+  outline: none;
+  text-align: left; /* Reset text alignment for the input */
+  margin: 0 auto; /* Center the input horizontally within the container */
+}
+
+/* Styles for the placeholder text */
+.url_input.peer::placeholder {
+  color: #777;
+}
+
+/* Hover effect for the input */
+.url_input.peer:hover {
+  border-color: #b7b7b7;
+}
+
+/* Focus effect for the input */
+.url_input.peer:focus {
+  border-color: #4285f4;
+}
+
+/* CSS for the white box */
+.white-box {
+  background-color: white;
+  padding: .5px; /* Adjust the padding as needed */
+  border-radius: 8px; /* Rounded corners */
+  margin: 0 auto; /* Center the box horizontally */
+  max-width: 800px; /* Set a maximum width for the box */
+}
+
+/* CSS for the content within the white box */
+.box-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: Add styling to the link_card */
+.link_card {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.link_card:hover {
+  background-color: #f5f5f5; /* Change the background color on hover */
+}
+/* CSS for the white box */
+.white-box {
+  background-color: white;
+  padding: 1px; /* Adjust the padding as needed */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center the text horizontally */
+  max-width: 900px; /* Set a maximum width for the box */
+  margin: 0 auto; /* Center the box horizontally */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow effect */
+
+}
+/* CSS for centering the heading */
+.text-center {
+  text-align: center;
+}
+/* CSS for the shadow-diffuse effect */
+.shadow-diffuse {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Adjust shadow properties as needed */
+}
+/* CSS for the ivory-colored box with shadow-diffuse effect */
+.snow-box {
+  background-color:#e2e2e2; /* Ivory color with the shade #fdf6e4 */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 1000px;
+  text-align: center; 
+   margin: 0 auto;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+.blue_gradient{
+  color : #0047ab;
+}
+/* Center the loader image horizontally and vertically on the page */
+.flex.justify-center.items-center.h-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Set the height to take up the full viewport height */
+}
+
+/* Styles for the loader image */
+.w-20.h-20.object-contain {
+  /* Adjust the size and styles of the loader image as needed */
+  width: 80px;
+  height: 80px;
+}
